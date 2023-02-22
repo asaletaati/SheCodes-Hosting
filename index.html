@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<style>
+.dot {
+  height: 50px;
+  width: 100px;
+  border-style: solid;
+  border-radius: 50%;
+  display: inline-block;
+}
+.rectangle {
+  height: 50px;
+  width: 150px;
+  background-color: #ffb3ff;
+  border-style: solid;
+  border-color: #ff1aff;
+  display: inline-block;
+}
+.rectangle2 {
+  height: 50px;
+  width: 200px;
+  background-color: #ffccff;
+  border-radius: 50px;
+  border-style: solid;
+  border-color: #ffb3ff;
+  display: inline-block;
+}
+.rectangle3 {
+  height: 50px;
+  width: 100%;
+  background-color: violet;
+  margin-top: 10px;
+  text-align: center;
+}
+.rectangle2:hover {
+  background-color: violet; 
+  color: white;
+}.rectangle:hover {
+  background-color: violet;
+  border-style: dashed;
+}
+.dot:hover {
+  border-color: white;
+  border-style: dashed;
+  color: white; 
+}
+</style>
+</head>
+<body style="border-style: solid; border-color:violet;">
+    <div class="rectangle3"></div>
+    <div style="text-align:center; margin: 40px;">
+  <p id="date"></p>
+  <div class="rectangle"><p id="city">Tehran</p><p id="temperture">25^C</p></div>
+  <br><br>
+  <br><br>
+  <span class="dot" style="background-color:orange; border-color:#b35900;">25^C<br>Monday</span>
+  <br><br>
+  <span class="dot" style="background-color:#cc6600; border-color:#994d00;">26^C<br>Tuseday</span>
+  <br><br>
+  <span class="dot" style="background-color:#ffb3d9; border-color: #ff80ff;">28^C<br>Wednesday</span>
+  <br><br>
+  <span class="dot" style="background-color:violet; border-color: #cc00cc;">24^C<br>Thursday</span>
+  <br><br>
+  <span class="dot" style="background-color:#80ffff; border-color:#006666;">25^C<br>Friday</span>
+  <br><br><br>
+  <form>
+    <input type="text" placeholder="Enter city name" id="search-box">
+    <button type="submit" class="rectangle2">Search</button>
+  </form
+  <br><br>
+  <button class="rectangle2" id="current">Current Location</button>
+  <br><br>
+  <div id="weather-details"></div>
+</div>
+  <script src="src/index.js"></script>
+
+</body>
+</html>
